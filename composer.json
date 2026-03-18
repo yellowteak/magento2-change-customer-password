@@ -2,8 +2,8 @@
   "name": "yellowteak/magento2-change-customer-password",
   "description": "Magento 2 module that makes it possible to change the customer password from the admin.",
   "type": "magento2-module",
-  "license": "OSL-3.0",
-  "version": "1.0.0",
+  "license": "MIT",
+  "version": "1.0.1",
   "authors": [
     {
       "name": "Erwin Romkes",
