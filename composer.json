@@ -19,7 +19,5 @@
   "autoload": {
     "psr-4": { "YellowTeak\\ChangeCustomerPassword\\": "src/" },
     "files": [ "src/registration.php" ]
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": false
+  }
 }
