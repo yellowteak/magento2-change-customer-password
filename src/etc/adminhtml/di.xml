@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2026 Yellow Teak
+  ~ SPDX-License-Identifier: MIT
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Controller\Adminhtml\Index\Save">
+        <plugin name="YellowTeak_ChangeCustomerPassword_save_plugin"
+                type="YellowTeak\ChangeCustomerPassword\Plugin\Controller\SavePlugin"/>
+    </type>
+</config>

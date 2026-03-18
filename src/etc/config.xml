@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2026 Yellow Teak
+  ~ SPDX-License-Identifier: MIT
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <yellow_teak_change_customer_password>
+            <general>
+                <enabled>0</enabled>
+            </general>
+        </yellow_teak_change_customer_password>
+    </default>
+</config>
