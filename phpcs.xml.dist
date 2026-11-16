@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2026 Yellow Teak
+  ~ SPDX-License-Identifier: MIT
+  -->
+
+<ruleset name="YellowTeak_ChangeCustomerPassword">
+    <description>Magento 2 coding standard for this module.</description>
+
+    <file>src</file>
+    <arg name="extensions" value="php,phtml"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+
+    <rule ref="Magento2">
+        <!-- This module documents signatures with native types. These rules demand a docblock that repeats them. -->
+        <exclude name="Magento2.Annotation.MethodAnnotationStructure"/>
+        <exclude name="Magento2.Annotation.MethodArguments"/>
+        <exclude name="Magento2.Commenting.ClassPropertyPHPDocFormatting"/>
+    </rule>
+</ruleset>

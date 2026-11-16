@@ -3,7 +3,6 @@
   "description": "Magento 2 module that makes it possible to change the customer password from the admin.",
   "type": "magento2-module",
   "license": "MIT",
-  "version": "1.0.1",
   "authors": [
     {
       "name": "Erwin Romkes",
@@ -13,11 +12,34 @@
     }
   ],
   "require": {
-    "magento/framework": "*",
-    "php": "^8.2"
+    "php": "^8.2",
+    "magento/framework": "^103.0",
+    "magento/module-backend": "*",
+    "magento/module-config": "*",
+    "magento/module-customer": "*",
+    "magento/module-ui": "*",
+    "magento/module-user": "*"
+  },
+  "require-dev": {
+    "magento/magento-coding-standard": "*",
+    "phpunit/phpunit": "^9.6 || ^10.5"
   },
   "autoload": {
     "psr-4": { "YellowTeak\\ChangeCustomerPassword\\": "src/" },
     "files": [ "src/registration.php" ]
+  },
+  "scripts": {
+    "test": "phpunit",
+    "lint": "phpcs"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "laminas/laminas-dependency-plugin": false,
+      "magento/composer-dependency-version-audit-plugin": false,
+      "magento/magento-composer-installer": false,
+      "php-http/discovery": false
+    },
+    "sort-packages": true
   }
 }
