@@ -9,11 +9,22 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
+                <resource id="Magento_Customer::customer">
+                    <resource id="Magento_Customer::manage">
+                        <resource id="Magento_Customer::actions">
+                            <resource id="YellowTeak_ChangeCustomerPassword::change_password"
+                                      title="Change password"
+                                      translate="title"
+                                      sortOrder="40"/>
+                        </resource>
+                    </resource>
+                </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
                             <resource id="YellowTeak_ChangeCustomerPassword::config"
                                       title="Yellow Teak Change Customer Password"
+                                      translate="title"
                                       sortOrder="999"/>
                         </resource>
                     </resource>

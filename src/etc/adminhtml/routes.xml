@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2026 Yellow Teak
+  ~ SPDX-License-Identifier: MIT
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="yellowteak_changecustomerpassword" frontName="yellowteak_changecustomerpassword">
+            <module name="YellowTeak_ChangeCustomerPassword"/>
+        </route>
+    </router>
+</config>
